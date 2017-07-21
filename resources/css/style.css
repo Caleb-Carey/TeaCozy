@@ -1,3 +1,5 @@
+
+
 body{
   font-family: Helvetica;
   font-size: 22px;
@@ -7,6 +9,11 @@ body{
   text-align: center;
 }
 
+h2,h3,h4{
+  margin: 0px;
+  padding: 10px;
+}
+/* Header Section */
 header{
   background-color: black;
   display: flex;
@@ -21,6 +28,12 @@ header{
   align-items: center;
 }
 
+header img{
+  height: 50px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 header nav{
   display: flex;
   text-decoration: underline;
@@ -32,20 +45,16 @@ header nav{
   padding-right: 40px;
 }
 
-a{
-  color:seashell;
-}
-
-header img{
-  height: 50px;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
 nav span{
   display: inline-block;
   padding: 10px;
 }
+
+a{
+  color:seashell;
+}
+
+/* Content Section*/
 
 .content{
   padding-top: 69px;
@@ -54,8 +63,7 @@ nav span{
   align-items: center;
 }
 
-
-
+/*Mission Section (Main)*/
 #mission.sect{
   background-image: url('../img/mission.jpg');
   max-width: 1200px;
@@ -65,21 +73,13 @@ nav span{
   justify-content: center;
 }
 
-h2,h3,h4{
-  margin: 0px;
-  padding: 10px;
-}
 #mission-info{
   background-color: black;
   width:100%;
   margin: 0px 0px 0px 0px;
 }
 
-.img-small img{
-  height: 200px;
-  max-width: 300px;
-  margin: 10px;
-}
+/* Teas Section (middle) */
 
 #teas
 {
@@ -89,11 +89,6 @@ h2,h3,h4{
 #teash2, #teash4{
   background-color: black;
   width: 100%
-}
-
-.img-small h4{
-  margin: 0;
-  padding: 5px;
 }
 
 .list-items{
@@ -106,6 +101,18 @@ h2,h3,h4{
   padding: 10px;
 }
 
+.img-small img{
+  height: 200px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.img-small h4{
+  margin: 0;
+  padding: 5px;
+}
+
+/* Locations Section (last) */
 
 #locations{
   background-image: url('../img/teacup.jpg');
@@ -117,33 +124,32 @@ h2,h3,h4{
   padding-top: 70px;
 }
 
+.locaions h2{
+  margin:15px;
+}
+
 .loc-flex{
   display: flex;
   justify-content: center;
 }
 
-.locaions h2{
-  margin:15px;
-}
 .loc-sect{
   background-color: black;
   flex-basis: 280px;
   margin: 5px 22px;
-  padding: 10;
+  padding: 10px;
   opacity: 1;
   display: flex;
   flex-direction: column;
   align-content: space-around;
 }
 
-.loc-sect h3{
-  padding:10px;
-}
-
 .loc-sect p{
   margin: 22px 0px;
 }
 
+
+/* Info and Footer Section */
 footer{
   display: block;
   text-align: left;
