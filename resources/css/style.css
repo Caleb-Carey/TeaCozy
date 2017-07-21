@@ -1,5 +1,5 @@
 body{
-  font-family: "Helvetica";
+  font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
@@ -16,8 +16,9 @@ header{
   width: 100%;
   height:69px;
   justify-content: space-between;
-  z-index: 20;
+  z-index: 1;
   margin-top: -8px;
+  align-items: center;
 }
 
 header nav{
@@ -41,7 +42,6 @@ header img{
   flex-direction: column;
 }
 
-
 nav span{
   display: inline-block;
   padding: 10px;
@@ -49,6 +49,30 @@ nav span{
 
 .content{
   padding-top: 69px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+#mission.sect{
+  background-image: url('../img/mission.jpg');
+  max-width: 1200px;
+  height:700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2,h3,h4{
+  margin: 0px;
+  padding: 10px;
+}
+#mission-info{
+  background-color: black;
+  width:100%;
+  margin: 0px 0px 0px 0px;
 }
 
 .img-small img{
@@ -57,8 +81,19 @@ nav span{
   margin: 10px;
 }
 
-.img-small{
+#teas
+{
+  margin:80px;
+}
 
+#teash2, #teash4{
+  background-color: black;
+  width: 100%
+}
+
+.img-small h4{
+  margin: 0;
+  padding: 5px;
 }
 
 .list-items{
@@ -67,46 +102,19 @@ nav span{
   max-width: 100%;
   align-content: space-around;
   justify-content: center;
+  margin: 20px;
+  padding: 10px;
 }
 
-#mission{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#mission-info{
-  background-image: url('../img/mission.jpg');
-  max-width: 1200px;
-  height:700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#teas h2, #teas h4{
-  background-color: black;
-  margin:0;
-  padding: 0;
-  width: 100%
-}
-
-#teas h2{
-  margin-top: 80px;
-}
-
-#teas h4{
-  margin: 20px 0px 15px 0px;
-}
 
 #locations{
   background-image: url('../img/teacup.jpg');
-  height:500px;
-  max-width:1200px;
+  flex-basis: 500px;
+  width:1200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 70px;
 }
 
 .loc-flex{
@@ -119,8 +127,26 @@ nav span{
 }
 .loc-sect{
   background-color: black;
-  margin: 20px;
-  width: 300px;
-  padding: 0;
+  flex-basis: 280px;
+  margin: 5px 22px;
+  padding: 10;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.loc-sect h3{
+  padding:10px;
+}
+
+.loc-sect p{
+  margin: 22px 0px;
+}
+
+footer{
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-left: 20px;
 }
